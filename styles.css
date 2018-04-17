@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100');
+
+* {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 100;
+}
+body{
+    background: url('mountain_smol.jpg') no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+}
+nav span, nav a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    line-height: 36px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+nav a:hover {
+    font-size: 32px;
+}
+nav .divider {
+    display: none;
+}
+@media (max-width: 700px) {
+    nav {
+        display: flex;
+        flex-flow: column;
+    }
+    nav span {
+        display: none;
+    }
+    nav .divider {
+        display: inline-block;
+    }
+}
+footer {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+}
+footer span, footer a {
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    text-decoration: none;
+}
+h1 {
+    overflow: hidden;
+    text-align: center;
+}
+@media screen and (min-width: 900px) {
+    h1:before,
+    h1:after {
+        background-color: white;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+    h1:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+    h1:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+}
+hr {
+    height: 0;
+    background-color: white;
+    border: 1px solid white;
+
+    padding: 0;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+    margin-top: 46px;
+    text-align: center;
+}
+.title {
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 72px;
+    font-weight: 100;
+}
+@media screen and (max-width: 470px) {
+    .title {
+        font-size: 48px;
+    }
+}
+
+.jess, .jess img {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    height: 64px;
+    width: auto;
+}
+.jess {
+    margin: 0 auto;
+    animation-name: stretch;
+    animation-duration: 400ms;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.03);
+    }
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+.divider:before {
+    background-color: white;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 35px;
+}
